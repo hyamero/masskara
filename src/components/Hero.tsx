@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section id="hero" className="min-h-screen">
       <Container>
-        <div className="flex flex-col items-start gap-14 z-20 mt-40">
+        <div className="flex flex-col items-start gap-14 z-20 pt-40">
           <div>
             <span className="text-gray-300 text-[1.7rem] font-regular font-spaceGrotesk">
               2023
