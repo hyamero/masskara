@@ -1,6 +1,6 @@
 import React from "react";
 import { gsap } from "gsap";
-// import Lenis from "@studio-freight/lenis";
+import Lenis from "@studio-freight/lenis";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import useLayoutEffect from "../hooks/useIsomorphicLayoutEffect";
 
@@ -38,15 +38,17 @@ export const ScrollAnimation = ({
   /**
    * Lenis Smooth Scrolling
    */
-  // const lenis = new Lenis();
+  if (typeof window !== "undefined") {
+    const lenis = new Lenis();
 
-  // lenis.on("scroll", ScrollTrigger.update);
+    lenis.on("scroll", ScrollTrigger.update);
 
-  // gsap.ticker.add((time) => {
-  //   lenis.raf(time * 1000);
-  // });
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1000);
+    });
 
-  gsap.ticker.lagSmoothing(0);
+    gsap.ticker.lagSmoothing(0);
+  }
 
   useLayoutEffect(() => {
     scrollTrig("#hero", "top top", 0.5).to("#masskara-half", {
