@@ -1,13 +1,13 @@
 import Image from "next/image";
 import bgImg from "public/images/bg.jpg";
-import masskaraLogo from "public/images/masskara-logo.png";
+import masskaraHalf from "public/images/masskara-half.png";
 import { Container } from "@/components/Container";
 
-export default function Home() {
+export default function Hero() {
   return (
-    <section className="h-screen w-screen overflow-x-hidden relative">
+    <section className="min-h-screen">
       <Container>
-        <div className="flex flex-col items-start gap-14 z-50 mt-40">
+        <div className="flex flex-col items-start gap-14 z-20 mt-40">
           <div>
             <span className="text-gray-300 text-[1.7rem] font-regular font-spaceGrotesk">
               2023
@@ -31,7 +31,7 @@ export default function Home() {
           </div>
           <button
             type="button"
-            className="text-lg font-light mix-blend-difference  border-white px-7 py-2 border-[1px] rounded-full font-spaceGrotesk"
+            className="text-lg font-light mix-blend-difference text-white border-white px-7 py-2 border-[1px] rounded-full font-spaceGrotesk"
           >
             View Calendar
           </button>
@@ -39,12 +39,12 @@ export default function Home() {
       </Container>
 
       <Image
-        src={masskaraLogo}
+        src={masskaraHalf}
         priority
         quality={100}
         alt="bg image"
-        height={1000}
-        className="pointer-events-none absolute -right-[37rem] saturate-[0.4] mix-blend-soft-light top-0"
+        height={1050}
+        className="pointer-events-none absolute right-0 saturate-[0.4] mix-blend-soft-light top-0"
       />
 
       <div className="absolute left-0 right-0 top-0 -z-20">
