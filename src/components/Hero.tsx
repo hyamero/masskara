@@ -5,7 +5,7 @@ import { Container } from "@/components/Container";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen">
+    <section id="hero" className="min-h-screen">
       <Container>
         <div className="flex flex-col items-start gap-14 z-20 mt-40">
           <div>
@@ -44,6 +44,7 @@ export default function Hero() {
         quality={100}
         alt="bg image"
         height={1050}
+        id="masskara-half"
         className="pointer-events-none absolute right-0 saturate-[0.4] mix-blend-soft-light top-0"
       />
 
