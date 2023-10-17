@@ -13,7 +13,7 @@ export default function Home() {
       <section className="h-screen w-screen overflow-x-hidden relative">
         <h1
           id="main-text"
-          className="relative z-50 ml-20 mt-40 bg-gradient-to-tr from-[#8c8c8c] to-white bg-clip-text text-5xl tracking-tight text-transparent sm:text-6xl md:mt-52 md:text-8xl lg:text-9xl lg:leading-[1.1]"
+          className="relative font-dirtyline z-50 ml-20 mt-40 bg-gradient-to-tr from-[#8c8c8c] to-white bg-clip-text text-5xl lowercase tracking-tight text-transparent sm:text-6xl md:mt-52 md:text-8xl lg:text-9xl lg:leading-[1.1]"
         >
           MassKara <br /> Festival
         </h1>
