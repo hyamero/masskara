@@ -14,7 +14,7 @@ export function scrollTrig(
   start: string,
   scrub: number | boolean,
   toggleActions?: string,
-  end?: string
+  end?: string,
 ) {
   const tl = gsap.timeline({
     scrollTrigger: {
@@ -64,7 +64,7 @@ export const ScrollAnimation = ({
         },
         {
           x: -150,
-        }
+        },
       )
       .fromTo(
         "#main-description .item-2",
@@ -74,7 +74,7 @@ export const ScrollAnimation = ({
         {
           x: 270,
         },
-        "<"
+        "<",
       );
 
     scrollTrig("#main-description", "top bottom", 0.3, "", "bottom 65%")
@@ -88,7 +88,7 @@ export const ScrollAnimation = ({
           y: 0,
           skewY: 0,
           duration: 1,
-        }
+        },
       )
       .fromTo(
         ".main-description .item-2",
@@ -101,7 +101,7 @@ export const ScrollAnimation = ({
           skewY: 0,
           duration: 1,
         },
-        "<"
+        "<",
       );
   }, []);
 

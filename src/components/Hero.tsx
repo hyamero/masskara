@@ -5,46 +5,46 @@ import { Container } from "@/components/Container";
 
 export default function Hero() {
   return (
-    <section id="hero" className="overflow-x-hidden relative min-h-screen">
-      <Container className="flex flex-col items-start gap-14 z-40 pt-40 absolute top-0 left-0 right-0 h-screen">
+    <section id="hero" className="relative min-h-screen overflow-x-hidden">
+      <Container className="absolute left-0 right-0 top-0 z-40 flex h-screen flex-col items-start gap-14 pt-40">
         <div>
-          <span className="text-gray-300 text-[1.7rem] font-regular font-spaceGrotesk">
+          <span className="font-regular font-spaceGrotesk text-[1.7rem] text-gray-300">
             2023 Festival
           </span>
           <h1
             id="main-text"
-            className="flex flex-col mt-3 relative font-dirtyline lowercase [&>span]:tracking-tight [&>span]:sm:text-6xl [&>span]:md:text-8xl [&>span]:lg:text-[9rem] lg:leading-[1.1]"
+            className="relative mt-3 flex flex-col font-dirtyline lowercase lg:leading-[1.1] [&>span]:tracking-tight [&>span]:sm:text-6xl [&>span]:md:text-8xl [&>span]:lg:text-[9rem]"
           >
-            <span className="bg-gradient-to-r to-[#484848] from-[#dddddd] bg-clip-text text-5xl text-transparent">
+            <span className="bg-gradient-to-r from-[#dddddd] to-[#484848] bg-clip-text text-5xl text-transparent">
               Bacolod
             </span>
             <br />
-            <span className="bg-gradient-to-r to-[#484848] from-[#dddddd] bg-clip-text text-5xl text-transparent">
+            <span className="bg-gradient-to-r from-[#dddddd] to-[#484848] bg-clip-text text-5xl text-transparent">
               MassKara
             </span>
           </h1>
-          <p className="text-xl w-3/5 font-spaceGrotesk font-regular uppercase text-gray-300">
+          <p className="font-regular w-3/5 font-spaceGrotesk text-xl uppercase text-gray-300">
             Embrace the Smiles, Feel the Rhythm: Join the Festivities, and
             Celebrate with Us!
           </p>
         </div>
         <button
           type="button"
-          className="text-lg font-light mix-blend-difference text-white border-white px-7 py-2 border-[1px] rounded-full font-spaceGrotesk"
+          className="rounded-full border-[1px] border-white px-7 py-2 font-spaceGrotesk text-lg font-light text-white mix-blend-difference"
         >
           View Calendar
         </button>
       </Container>
 
-      <div id="main-description" className="absolute w-full bottom-40">
-        <h1 className="main-description text-center left-0 flex flex-col mt-3 font-dirtyline  [&>span]:tracking-tight [&>span]:sm:text-6xl [&>span]:md:text-8xl [&>span]:lg:text-[9rem] lg:leading-[1.1]  overflow-hidden opacity-70">
-          <span className="item-1 bg-gradient-to-r to-[#484848] from-[#dddddd] bg-clip-text text-5xl text-transparent">
+      <div id="main-description" className="absolute bottom-40 w-full">
+        <h1 className="main-description left-0 mt-3 flex flex-col overflow-hidden text-center  font-dirtyline opacity-70 lg:leading-[1.1] [&>span]:tracking-tight [&>span]:sm:text-6xl  [&>span]:md:text-8xl [&>span]:lg:text-[9rem]">
+          <span className="item-1 bg-gradient-to-r from-[#dddddd] to-[#484848] bg-clip-text text-5xl text-transparent">
             EmbrAce the Smiles,
           </span>
         </h1>
 
-        <h1 className="main-description text-center left-0 flex flex-col mt-3 font-dirtyline  [&>span]:tracking-tight [&>span]:sm:text-6xl [&>span]:md:text-8xl [&>span]:lg:text-[9rem] lg:leading-[1.1]  overflow-hidden opacity-70">
-          <span className="item-2 bg-gradient-to-r to-[#484848] from-[#dddddd] bg-clip-text text-5xl text-transparent">
+        <h1 className="main-description left-0 mt-3 flex flex-col overflow-hidden text-center  font-dirtyline opacity-70 lg:leading-[1.1] [&>span]:tracking-tight [&>span]:sm:text-6xl  [&>span]:md:text-8xl [&>span]:lg:text-[9rem]">
+          <span className="item-2 bg-gradient-to-r from-[#dddddd] to-[#484848] bg-clip-text text-5xl text-transparent">
             Feel the RhyThm
           </span>
         </h1>
@@ -67,7 +67,7 @@ export default function Hero() {
         alt="bg image"
         height={1050}
         id="masskara-half"
-        className="pointer-events-none absolute -right-[36rem] saturate-[0.4] mix-blend-soft-light top-40"
+        className="pointer-events-none absolute -right-[36rem] top-40 mix-blend-soft-light saturate-[0.4]"
       />
     </section>
   );

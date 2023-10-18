@@ -12,7 +12,7 @@ interface GlobalContextProps {
 }
 
 const GlobalContext = createContext<GlobalContextProps>(
-  {} as GlobalContextProps
+  {} as GlobalContextProps,
 );
 
 const GlobalContextProvider = ({ children }: { children: React.ReactNode }) => {
@@ -27,7 +27,7 @@ const GlobalContextProvider = ({ children }: { children: React.ReactNode }) => {
       unmountLoader,
       handleUnmountLoader,
     }),
-    [unmountLoader, handleUnmountLoader]
+    [unmountLoader, handleUnmountLoader],
   );
 
   return (
