@@ -103,6 +103,16 @@ export const ScrollAnimation = ({
         },
         "<",
       );
+
+    scrollTrig("#about", "180px bottom", 0.7).fromTo(
+      "#showcase-img",
+      {
+        y: 20,
+      },
+      {
+        y: -80,
+      },
+    );
   }, []);
 
   return <div>{children}</div>;

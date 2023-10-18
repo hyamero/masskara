@@ -17,6 +17,9 @@ const config: Config = {
         dirtyline: ["Dirtyline", "sans-serif"],
         spaceGrotesk: ["Space Grotesk", "sans-serif"],
       },
+      colors: {
+        offwhite: "#dddddd",
+      },
     },
   },
   plugins: [],

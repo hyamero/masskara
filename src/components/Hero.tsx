@@ -38,14 +38,14 @@ export default function Hero() {
 
       <div id="main-description" className="absolute bottom-40 w-full">
         <h1 className="main-description left-0 mt-3 flex flex-col overflow-hidden text-center  font-dirtyline opacity-70 lg:leading-[1.1] [&>span]:tracking-tight [&>span]:sm:text-6xl  [&>span]:md:text-8xl [&>span]:lg:text-[9rem]">
-          <span className="item-1 bg-gradient-to-r from-[#dddddd] to-[#484848] bg-clip-text text-5xl text-transparent">
-            EmbrAce the Smiles,
+          <span className="item-1 bg-gradient-to-r from-[#dddddd] to-[#484848] bg-clip-text text-5xl lowercase text-transparent">
+            Embrace the Smiles,
           </span>
         </h1>
 
         <h1 className="main-description left-0 mt-3 flex flex-col overflow-hidden text-center  font-dirtyline opacity-70 lg:leading-[1.1] [&>span]:tracking-tight [&>span]:sm:text-6xl  [&>span]:md:text-8xl [&>span]:lg:text-[9rem]">
-          <span className="item-2 bg-gradient-to-r from-[#dddddd] to-[#484848] bg-clip-text text-5xl text-transparent">
-            Feel the RhyThm
+          <span className="item-2 bg-gradient-to-r from-[#dddddd] to-[#484848] bg-clip-text text-5xl lowercase text-transparent">
+            Feel the Rhythm
           </span>
         </h1>
       </div>
