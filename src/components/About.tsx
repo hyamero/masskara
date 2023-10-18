@@ -1,5 +1,5 @@
 import Image from "next/image";
-import electricMasskara from "public/images/electric-masskara.jpg";
+import electricMasskara from "public/images/electric-masskara3.jpg";
 
 export const About = () => {
   return (
@@ -9,7 +9,7 @@ export const About = () => {
           src={electricMasskara}
           id="showcase-img"
           alt="Bonsai Showcase Image"
-          className="w-full rounded-md object-cover object-center saturate-[0.75]"
+          className="w-full rounded-md object-cover object-center saturate-[0.65]"
         />
       </div>
 

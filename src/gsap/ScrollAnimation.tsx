@@ -13,7 +13,6 @@ export function scrollTrig(
   trigger: string,
   start: string,
   scrub: number | boolean,
-  toggleActions?: string,
   end?: string,
 ) {
   const tl = gsap.timeline({
@@ -21,7 +20,7 @@ export function scrollTrig(
       trigger,
       start,
       scrub,
-      toggleActions: toggleActions || "restart none none reset",
+      toggleActions: "restart none none reset",
       end,
       markers: process.env.NODE_ENV === "development",
     },
@@ -51,7 +50,7 @@ export const ScrollAnimation = ({
   }
 
   useLayoutEffect(() => {
-    scrollTrig("#hero", "top top", 0.5, "", "65% top").to("#masskara-half", {
+    scrollTrig("#hero", "top top", 0.5, "65% top").to("#masskara-half", {
       y: -300,
       x: 100,
     });
@@ -77,7 +76,7 @@ export const ScrollAnimation = ({
         "<",
       );
 
-    scrollTrig("#main-description", "top bottom", 0.3, "", "bottom 65%")
+    scrollTrig("#main-description", "top bottom", 0.3, "bottom 65%")
       .fromTo(
         ".main-description .item-1",
         {
@@ -104,6 +103,9 @@ export const ScrollAnimation = ({
         "<",
       );
 
+    /**
+     * About Section
+     */
     scrollTrig("#about", "top bottom", 0.7).fromTo(
       "#showcase-img",
       {
@@ -114,8 +116,47 @@ export const ScrollAnimation = ({
       },
     );
 
-    scrollTrig("#about-description", "top 80%", 0.4, "", "20% top").to(
+    scrollTrig("#about-description", "top 80%", 0.4, "20% top").to(
       "#about-description div",
+      {
+        scaleY: 0,
+      },
+    );
+
+    scrollTrig("#history-img", "top bottom", 0.7).fromTo(
+      "#history-img",
+      {
+        y: 280,
+      },
+      {
+        y: -200,
+        duration: 1,
+      },
+    );
+
+    scrollTrig("#history-title", "-50% bottom", 0.3)
+      .fromTo(
+        ".history-title-0",
+        {
+          x: 130,
+        },
+        {
+          x: -150,
+        },
+      )
+      .fromTo(
+        ".history-title-2",
+        {
+          x: -150,
+        },
+        {
+          x: 130,
+        },
+        "<",
+      );
+
+    scrollTrig("#history-description", "top 80%", 0.4, "20% top").to(
+      "#history-description div",
       {
         scaleY: 0,
       },
