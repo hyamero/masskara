@@ -104,13 +104,13 @@ export const ScrollAnimation = ({
         "<",
       );
 
-    scrollTrig("#about", "180px bottom", 0.7).fromTo(
+    scrollTrig("#about", "top bottom", 0.7).fromTo(
       "#showcase-img",
       {
-        y: 20,
+        y: 0,
       },
       {
-        y: -80,
+        y: -350,
       },
     );
 
@@ -118,6 +118,7 @@ export const ScrollAnimation = ({
       "#about-description div",
       {
         scaleY: 0,
+        saturate: 0.9,
       },
     );
   }, []);

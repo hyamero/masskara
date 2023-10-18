@@ -1,15 +1,15 @@
 import Image from "next/image";
-import aboutMasskara from "public/images/about-masskara.jpg";
+import electricMasskara from "public/images/electric-masskara.jpg";
 
 export const About = () => {
   return (
     <div id="about" className="min-h-screen bg-black px-32">
-      <div className="overflow-hidden rounded-3xl ">
+      <div className="h-[500px] overflow-hidden rounded-3xl ">
         <Image
-          src={aboutMasskara}
+          src={electricMasskara}
           id="showcase-img"
           alt="Bonsai Showcase Image"
-          className="w-full scale-125 rounded-md object-cover object-center"
+          className="w-full rounded-md object-cover object-center saturate-[0.75]"
         />
       </div>
 
