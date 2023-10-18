@@ -145,7 +145,7 @@ export const ScrollAnimation = ({
         },
       )
       .fromTo(
-        ".history-title-2",
+        ".history-title-1",
         {
           x: -150,
         },

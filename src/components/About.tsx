@@ -1,5 +1,6 @@
 import Image from "next/image";
 import electricMasskara from "public/images/electric-masskara3.jpg";
+import { Container } from "./Container";
 
 export const About = () => {
   return (
@@ -8,12 +9,13 @@ export const About = () => {
         <Image
           src={electricMasskara}
           id="showcase-img"
+          priority
           alt="Bonsai Showcase Image"
           className="w-full rounded-md object-cover object-center saturate-[0.65]"
         />
       </div>
 
-      <div id="about-description" className="relative">
+      <Container id="about-description" className="relative">
         <div className="absolute left-0 top-0 h-full w-full origin-bottom bg-black opacity-90"></div>
         <p className="text-offwhite mt-40 w-5/6 font-spaceGrotesk text-5xl font-light leading-tight">
           The festival is known for its extravagant display of masks and vibrant
@@ -22,7 +24,7 @@ export const About = () => {
           year in October, it comes alive with lively street dancing,
           captivating musical performances, and a dazzling beauty pageant.
         </p>
-      </div>
+      </Container>
     </div>
   );
 };

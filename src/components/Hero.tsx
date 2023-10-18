@@ -50,7 +50,7 @@ export default function Hero() {
         </h1>
       </div>
 
-      <div className=" -z-20">
+      <div className="-z-20">
         <Image
           src={bgImg}
           priority
