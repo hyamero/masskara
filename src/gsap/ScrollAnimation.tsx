@@ -114,11 +114,10 @@ export const ScrollAnimation = ({
       },
     );
 
-    scrollTrig("#about-description", "top bottom", 0.4, "", "20% top").to(
+    scrollTrig("#about-description", "top 80%", 0.4, "", "20% top").to(
       "#about-description div",
       {
         scaleY: 0,
-        saturate: 0.9,
       },
     );
   }, []);
