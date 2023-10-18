@@ -113,6 +113,13 @@ export const ScrollAnimation = ({
         y: -80,
       },
     );
+
+    scrollTrig("#about-description", "top bottom", 0.4, "", "20% top").to(
+      "#about-description div",
+      {
+        scaleY: 0,
+      },
+    );
   }, []);
 
   return <div>{children}</div>;
