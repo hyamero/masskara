@@ -11,6 +11,7 @@ export default function Home() {
       <main>
         <ScrollAnimation>
           <Hero />
+          <div className="h-screen"></div>
         </ScrollAnimation>
       </main>
     </>

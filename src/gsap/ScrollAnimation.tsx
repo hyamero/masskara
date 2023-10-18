@@ -51,9 +51,58 @@ export const ScrollAnimation = ({
   }
 
   useLayoutEffect(() => {
-    scrollTrig("#hero", "top top", 0.5).to("#masskara-half", {
+    scrollTrig("#hero", "top top", 0.5, "", "65% top").to("#masskara-half", {
       y: -300,
+      x: 100,
     });
+
+    scrollTrig("#main-description", "-50% bottom", 0.3)
+      .fromTo(
+        "#main-description .item-1",
+        {
+          x: 130,
+        },
+        {
+          x: -150,
+        }
+      )
+      .fromTo(
+        "#main-description .item-2",
+        {
+          x: -50,
+        },
+        {
+          x: 270,
+        },
+        "<"
+      );
+
+    scrollTrig("#main-description", "top bottom", 0.3, "", "bottom 65%")
+      .fromTo(
+        ".main-description .item-1",
+        {
+          y: 200,
+          skewY: 10,
+        },
+        {
+          y: 0,
+          skewY: 0,
+          duration: 1,
+        }
+      )
+      .fromTo(
+        ".main-description .item-2",
+        {
+          y: 200,
+          skewY: -10,
+        },
+        {
+          y: 0,
+          skewY: 0,
+          duration: 1,
+        },
+        "<"
+      );
   }, []);
 
   return <div>{children}</div>;
