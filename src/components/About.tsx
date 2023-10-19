@@ -1,10 +1,17 @@
 import Image from "next/image";
 import electricMasskara from "public/images/electric-masskara3.jpg";
 import { Container } from "./Container";
+import gradient2 from "public/images/gradients/gradient2.jpg";
 
 export const About = () => {
   return (
-    <div id="about" className="min-h-screen bg-black px-32">
+    <div id="about" className="relative min-h-screen bg-black px-32">
+      <Image
+        src={gradient2}
+        alt="Gradient1"
+        height={1000}
+        className="absolute -bottom-20 right-0 z-20 mix-blend-screen"
+      />
       <div className="h-[500px] overflow-hidden rounded-3xl ">
         <Image
           src={electricMasskara}
