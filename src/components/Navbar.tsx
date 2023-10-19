@@ -3,7 +3,7 @@ import { Container } from "./Container";
 
 export const Navbar = () => {
   return (
-    <Container className="fixed left-0 right-0 top-0 z-40 flex items-center justify-between pt-12 mix-blend-difference">
+    <Container className="fixed left-0 right-0 top-0 z-50 flex items-center justify-between pt-12 mix-blend-difference">
       <Link
         href="#"
         className="font-grotesk text-xl font-medium uppercase text-gray-300 "

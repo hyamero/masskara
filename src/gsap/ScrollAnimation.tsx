@@ -22,7 +22,7 @@ export function scrollTrig(
       scrub,
       toggleActions: "restart none none reset",
       end,
-      // markers: process.env.NODE_ENV === "development",
+      markers: process.env.NODE_ENV === "development",
     },
   });
 

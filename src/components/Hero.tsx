@@ -11,14 +11,13 @@ export default function Hero() {
           <span className="font-regular font-spaceGrotesk text-[1.7rem] text-gray-300">
             2023 Festival
           </span>
-          <h1
-            id="main-text"
-            className="relative mt-3 flex flex-col font-dirtyline lowercase lg:leading-[1.1] [&>span]:tracking-tight [&>span]:sm:text-6xl [&>span]:md:text-8xl [&>span]:lg:text-[9rem]"
-          >
+          <h1 className="main-text relative mt-3 flex flex-col overflow-hidden font-dirtyline lowercase lg:leading-[1.1] [&>span]:tracking-tight [&>span]:sm:text-6xl [&>span]:md:text-8xl [&>span]:lg:text-[9rem]">
             <span className="bg-gradient-to-r from-[#dddddd] to-[#484848] bg-clip-text text-5xl text-transparent">
               Bacolod
             </span>
-            <br />
+          </h1>
+
+          <h1 className="main-text relative mt-3 flex flex-col overflow-hidden font-dirtyline lowercase lg:leading-[1.1] [&>span]:tracking-tight [&>span]:sm:text-6xl [&>span]:md:text-8xl [&>span]:lg:text-[9rem]">
             <span className="bg-gradient-to-r from-[#dddddd] to-[#484848] bg-clip-text text-5xl text-transparent">
               MassKara
             </span>
