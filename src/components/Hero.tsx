@@ -6,8 +6,8 @@ import { Container } from "@/components/Container";
 export default function Hero() {
   return (
     <section id="hero" className="relative min-h-screen overflow-x-hidden">
-      <Container className="absolute left-0 right-0 top-0 z-40 flex h-screen flex-col items-start gap-14 pt-40">
-        <div>
+      <Container className="absolute left-0 right-0 top-0 z-30 flex h-screen flex-col items-start gap-14 pt-40">
+        <div className="relative z-20">
           <span className="font-regular font-spaceGrotesk text-[1.7rem] text-gray-300">
             2023 Festival
           </span>
