@@ -57,9 +57,49 @@ export const Loader = () => {
             duration: 1.7,
             ease: "power4.inOut",
             stagger: 0.7,
-            onComplete: () => handleUnmountLoader(),
           },
           "<",
+        )
+        .fromTo(
+          ".main-text span",
+          {
+            opacity: 0,
+            y: 160,
+          },
+          {
+            y: 0,
+            opacity: 1,
+            stagger: 0.2,
+            duration: 1.5,
+            ease: "power3.inOut",
+          },
+          "-=0.7",
+        )
+        .fromTo(
+          ".main-year, .main-desc, .main-btn",
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+            duration: 0.3,
+            stagger: 0.2,
+            ease: "power3.inOut",
+          },
+          "-=0.4",
+        )
+        .fromTo(
+          ".nav-item",
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+            stagger: 0.2,
+            duration: 0.5,
+            ease: "power3.inOut",
+            onComplete: () => handleUnmountLoader(),
+          },
         );
     }
   }, [handleUnmountLoader, unmountLoader]);
