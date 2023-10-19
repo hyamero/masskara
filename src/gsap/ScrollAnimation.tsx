@@ -161,7 +161,56 @@ export const ScrollAnimation = ({
         scaleY: 0,
       },
     );
+
+    scrollTrig("#gallery", "top bottom", 0.4, "bottom top")
+      .fromTo(
+        "#gallery-col-1, #gallery-col-3",
+        {
+          x: -250,
+        },
+        {
+          x: 100,
+          duration: 1,
+        },
+      )
+      .fromTo(
+        ".gallery-item",
+        {
+          x: 50,
+        },
+        {
+          x: -20,
+          duration: 1,
+        },
+        "<",
+      )
+      .fromTo(
+        "#gallery-col-2",
+        {
+          x: 250,
+        },
+        {
+          x: -100,
+          duration: 1,
+        },
+        "<",
+      )
+      .fromTo(
+        ".gallery-item",
+        {
+          x: -50,
+        },
+        {
+          x: 20,
+          duration: 1,
+        },
+        "<",
+      );
   }, []);
+
+  /**
+   * Gallery
+   */
 
   return <div>{children}</div>;
 };

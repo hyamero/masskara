@@ -5,6 +5,7 @@ import { ScrollAnimation } from "@/gsap/ScrollAnimation";
 import { About } from "@/components/About";
 import { History } from "@/components/History";
 import { Container } from "@/components/Container";
+import { Gallery } from "@/components/Gallery";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
           <History />
           <Container id="history-description" className="relative">
             <div className="absolute left-0 top-0 h-full w-full origin-bottom bg-black opacity-90"></div>
-            <p className="text-offwhite w-5/6 font-spaceGrotesk text-5xl font-light leading-tight">
+            <p className="w-5/6 font-spaceGrotesk text-5xl font-light leading-tight text-offwhite">
               The festival is known for its extravagant display of masks and
               vibrant costumes, reflecting the city&apos;s creativity and
               exuberance. It&apos;s a harmonious blend of diverse cultural
@@ -27,6 +28,7 @@ export default function Home() {
               beauty pageant.
             </p>
           </Container>
+          <Gallery />
           <div className="h-screen"></div>
         </ScrollAnimation>
       </main>
