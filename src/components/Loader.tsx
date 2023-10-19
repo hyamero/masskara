@@ -82,7 +82,7 @@ export const Loader = () => {
           },
           {
             opacity: 1,
-            duration: 0.3,
+            duration: 0.6,
             stagger: 0.2,
             ease: "power3.inOut",
           },
