@@ -111,7 +111,7 @@ export const Footer = () => {
 
                 <div className="text-[#D0D0C8]">
                   <p>+1 980 971-24-19</p>
-                  <p>hello@regalfoliage.com</p>
+                  <p>hello@masskara23.com</p>
                 </div>
               </div>
               <div className="flex gap-3 text-[#D0D0C8] [&>*>*]:text-2xl [&>*]:grid [&>*]:h-12 [&>*]:w-12 [&>*]:cursor-pointer [&>*]:place-items-center [&>*]:rounded-full [&>*]:border [&>*]:border-[#616260] [&>*]:p-2">

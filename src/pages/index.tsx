@@ -1,11 +1,11 @@
 import Hero from "@/components/Hero";
-import { Navbar } from "@/components/Navbar";
 import { Loader } from "@/components/Loader";
 import { ScrollAnimation } from "@/gsap/ScrollAnimation";
 import { About } from "@/components/About";
 import { History } from "@/components/History";
 import { Container } from "@/components/Container";
 import { Gallery } from "@/components/Gallery";
+import { Events } from "@/components/Events";
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
           </p>
         </Container>
         <Gallery />
-        <div className="h-screen"></div>
+        <Events />
       </ScrollAnimation>
     </>
   );

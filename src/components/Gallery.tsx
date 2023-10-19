@@ -25,12 +25,12 @@ export const Gallery = () => {
     >
       <div id="gallery-col-1" className="grid grid-cols-3 gap-10">
         {imagesCol1.map((img, i) => (
-          <div key={i} className="h-[300px] overflow-hidden rounded-3xl ">
+          <div key={i} className="h-[300px] overflow-hidden">
             <Image
               src={img}
               priority
               alt="Electric Masskara"
-              className="gallery-item w-full scale-150 rounded-md object-cover object-center saturate-[0.65]"
+              className="gallery-item w-full scale-150 object-cover object-center saturate-[0.65]"
             />
           </div>
         ))}
@@ -38,12 +38,12 @@ export const Gallery = () => {
 
       <div id="gallery-col-2" className="grid grid-cols-3 gap-10">
         {imagesCol2.map((img, i) => (
-          <div key={i} className="h-[300px] overflow-hidden rounded-3xl ">
+          <div key={i} className="h-[300px] overflow-hidden ">
             <Image
               src={img}
               priority
               alt="Electric Masskara"
-              className="gallery-item w-full scale-150 rounded-md object-cover object-center saturate-[0.65]"
+              className="gallery-item w-full scale-150 object-cover object-center saturate-[0.65]"
             />
           </div>
         ))}
@@ -51,12 +51,12 @@ export const Gallery = () => {
 
       <div id="gallery-col-3" className="grid grid-cols-3 gap-10">
         {imagesCol3.map((img, i) => (
-          <div key={i} className="h-[300px] overflow-hidden rounded-3xl ">
+          <div key={i} className="h-[300px] overflow-hidden ">
             <Image
               src={img}
               priority
               alt="Electric Masskara"
-              className="gallery-item w-full  scale-150 rounded-md object-cover object-center saturate-50 saturate-[0.65]"
+              className="gallery-item w-full  scale-150 object-cover object-center saturate-[0.65]"
             />
           </div>
         ))}

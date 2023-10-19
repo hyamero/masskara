@@ -78,7 +78,7 @@ export const ScrollAnimation = ({
 
     scrollTrig("#main-description", "top bottom", 0.3, "bottom 65%")
       .fromTo(
-        ".main-description .item-1",
+        "#main-description .item-1",
         {
           y: 200,
           skewY: 10,
@@ -90,7 +90,7 @@ export const ScrollAnimation = ({
         },
       )
       .fromTo(
-        ".main-description .item-2",
+        "#main-description .item-2",
         {
           y: 200,
           skewY: -10,
@@ -162,6 +162,10 @@ export const ScrollAnimation = ({
       },
     );
 
+    /**
+     * Gallery
+     */
+
     scrollTrig("#gallery", "top bottom", 0.4, "bottom top")
       .fromTo(
         "#gallery-col-1, #gallery-col-3",
@@ -206,11 +210,47 @@ export const ScrollAnimation = ({
         },
         "<",
       );
-  }, []);
 
-  /**
-   * Gallery
-   */
+    /**
+     * Events
+     */
+
+    const eventTargets = [];
+
+    // Looping through testimonials for individual scroll trigs
+    for (let i = 0; i < 3; i++) {
+      eventTargets.push({
+        trigger: `#event-container-${i}`,
+        target: `#event-container-${i} .title-line`,
+        target2: `#event-container-${i} .event-img-container .event-inner-img`,
+      });
+    }
+
+    eventTargets.forEach(({ trigger, target, target2 }) => {
+      scrollTrig(trigger, "top bottom", 0.6)
+        .fromTo(
+          target,
+          {
+            x: 250,
+          },
+          {
+            x: -350,
+          },
+        )
+        .fromTo(
+          target2,
+          {
+            y: 70,
+            x: 50,
+          },
+          {
+            y: -150,
+            x: -50,
+          },
+          "<",
+        );
+    });
+  }, []);
 
   return <div>{children}</div>;
 };

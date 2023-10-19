@@ -27,22 +27,25 @@ export default function Hero() {
             Celebrate with Us!
           </p>
         </div>
-        <button
+        <a
+          href="https://www.bacolodmasskara.com/events-schedules/"
+          target="_blank"
+          rel="noopener noreferrer"
           type="button"
           className="main-btn rounded-full border-[1px] border-white px-7 py-2 font-spaceGrotesk text-lg font-light text-white mix-blend-difference"
         >
           View Calendar
-        </button>
+        </a>
       </Container>
 
       <div id="main-description" className="absolute bottom-40 w-full">
         <h1 className="main-description left-0 mt-3 flex flex-col overflow-hidden text-center  font-dirtyline opacity-70 lg:leading-[1.1] [&>span]:tracking-tight [&>span]:sm:text-6xl  [&>span]:md:text-8xl [&>span]:lg:text-[9rem]">
-          <span className="bg-gradient-to-r from-[#dddddd] to-[#484848] bg-clip-text text-5xl lowercase text-transparent">
+          <span className="item-1 bg-gradient-to-r from-[#dddddd] to-[#484848] bg-clip-text text-5xl lowercase text-transparent">
             Embrace the Smiles,
           </span>
         </h1>
 
-        <h1 className="main-description left-0 mt-3 flex flex-col overflow-hidden text-center  font-dirtyline opacity-70 lg:leading-[1.1] [&>span]:tracking-tight [&>span]:sm:text-6xl [&>span]:md:text-8xl [&>span]:lg:text-[9rem]">
+        <h1 className="item-2 main-description left-0 mt-3 flex flex-col overflow-hidden text-center  font-dirtyline opacity-70 lg:leading-[1.1] [&>span]:tracking-tight [&>span]:sm:text-6xl [&>span]:md:text-8xl [&>span]:lg:text-[9rem]">
           <span className="bg-gradient-to-r from-[#dddddd] to-[#484848] bg-clip-text text-5xl lowercase text-transparent">
             Feel the Rhythm
           </span>
